@@ -6,11 +6,11 @@ import Item from "../Item/Item";
 const NewCollection = () => {
     return (
         <div className="newcollections">
-           <div class="heading">
+           <div className="heading">
             <h1>NEW COLLECIONS</h1>
             <div className="underline"></div>
             </div>
-            <div class="collections">
+            <div className="collections">
                 {new_collections.map((products, index) => {
                     return <Item key={index} id={products.id} image={products.image} name={products.name} new_price={products.new_price} old_price={products.old_price} />
                 })}
