@@ -7,7 +7,7 @@ import Item from '../components/Item/Item'
 
 const Shopcategory=(props)=>{
 
-    const {all_products}=useContext(ShopContext)
+    const {all_product}=useContext(ShopContext)
     return(
 <div className="shopcategory">
 <img className='banner'   src={props.banner} alt=""/>
@@ -22,7 +22,7 @@ const Shopcategory=(props)=>{
 </div>
 
 <div className="shopcategory-products">
-{all_products.map((products,i)=>{
+{all_product.map((products,i)=>{
     if(props.category===products.category)
     {return <Item key={i} id={products.id} image={products.image} name={products.name} new_price={products.new_price} old_price={products.old_price}/>}
     else{
@@ -31,7 +31,7 @@ const Shopcategory=(props)=>{
 })}
 
 </div>
-<div class="shopcategory-loadmoe">
+<div className="shopcategory-loadmoe">
     Explore More
 </div>
 
