@@ -14,6 +14,7 @@ useEffect(()=>{
     setMenu(currentpath || 'Shop');
 },[location.pathname]);
     return (
+        <>
         <div className='navbar'>
             <div className="nav-logo">
                 <img src={logo} alt="" />
@@ -33,6 +34,8 @@ useEffect(()=>{
             </div>
 
         </div>
+        <hr/>
+        </>
 
 
     )
