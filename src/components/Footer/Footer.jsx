@@ -19,18 +19,18 @@ const Footer=()=>{
     <li>About</li>
     <li>Contact</li>
 </ul>
-<div class="footer-social-icons">
+<div className="footer-social-icons">
 <div class="footer-icons-container">
     <img src={instagram_icon} alt=""/>
 </div>
-<div class="footer-icons-container">
+<div className="footer-icons-container">
     <img src={pinterest_icon} alt=""/>
 </div>
-<div class="footer-icons-container">
+<div className="footer-icons-container">
     <img src={whatsapp_icon} alt=""/>
 </div>
 </div>
-<div class="footer-copyright">
+<div className="footer-copyright">
 <hr/>
 <p>Copyright @ 2024 - All Rights Reserved.</p>
 

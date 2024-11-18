@@ -34,12 +34,12 @@ const Productdisplay=(props)=>{
 <div className="oldprice">${product.old_price}</div>
 
 </div>
-<div class="productdisplay-right-description">
+<div className="productdisplay-right-description">
 Lightweight, luxurious silk blouse designed for a chic, polished look. Tailored with a flattering fit and delicate button-down details. Ideal for elevating both work and evening outfits.
 </div>
-<div class="productdisplay-right-size">
+<div className="productdisplay-right-size">
 <h1>Select Size</h1>
-<div class="productdisplay-right-differentsizes">
+<div className="productdisplay-right-differentsizes">
     <div>S</div>
     <div>M</div>
     <div>L</div>
