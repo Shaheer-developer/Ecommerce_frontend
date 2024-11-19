@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import './Productdisplay.css'
 import staricon from '../assets/star_icon.png'
 import stardullicon from '../assets/star_dull_icon.png'
+import { ShopContext } from "../../context/Shopcontext";
 
 const Productdisplay=(props)=>{
     const {product}=props;
+    const {addtocart}=useContext(ShopContext)
     return(
         <div className="productdisplay">
 <div className="productdisplay-left">
@@ -47,7 +49,7 @@ Lightweight, luxurious silk blouse designed for a chic, polished look. Tailored 
     <div>XXL</div>
 </div>
 </div>
-<button>ADD TO CART</button>
+<button onClick={()=>{addtocart(product.id)}} className="productdisplay-addtocart">ADD TO CART</button>
 <p className="productdisplay-right-category"><span>Category:</span> Women , T-shirt , Crop-top</p>
 <p className="productdisplay-right-category"><span>Tags:</span> Modern , Latest</p>
 </div>
