@@ -1,12 +1,15 @@
-import React,{ useState, useEffect } from 'react'
+import React,{ useState, useEffect ,useContext} from 'react'
 import './Navbar.css'
 import logo from '../assets/logo.png'
 import cart_icon from '../assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
+import { ShopContext } from "../../context/Shopcontext";
+
 
 
 const Navbar = () => {
+    const { getTotalCartItems } = useContext(ShopContext)
     const [menu,setMenu]=useState("Shop");
     const location=useLocation();
 useEffect(()=>{
@@ -29,7 +32,7 @@ useEffect(()=>{
             <div className="nav-login-cart">
                <Link style={{textDecoration:'none'}}  to='/login'><button>Login</button></Link> 
                <Link style={{textDecoration:'none'}}  to='/cart'> <img src={cart_icon} alt="" /></Link>
-                <div className="nav-cart-count">0</div>
+                <div className="nav-cart-count">{getTotalCartItems()}</div>
 
             </div>
 
