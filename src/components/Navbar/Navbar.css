@@ -3,6 +3,7 @@
     justify-content: space-around;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
+    align-items: center;
 }
 .nav-logo{
     display: flex;
@@ -43,7 +44,7 @@
     align-items: center;
     gap: 45px;
 }
-.nav-login-cart button{
+.nav-login-cart .loginbutton{
     width: 157px;
     height: 58px;
     outline: none;
@@ -71,4 +72,134 @@
     background: red;
     color: white;
     font-size: 14px;
+}
+.hamburger {
+    display: none;
+    border: none;
+    background: white;
+    margin-right: -18px;
+
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+@media(max-width:1280px){
+    .navbar{
+        padding: 12px 50px;
+    }
+    .nav-logo img{
+        width: 40px;
+    }
+    .nav-logo p {
+        font-size: 25px;
+    }
+    .nav-menu{
+        gap: 30px;
+        font-size: 16px;
+    }
+    .nav-login-cart{
+        gap: 30px;
+    }
+    .nav-login-cart .loginbutton{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .nav-cart-count{
+        margin-left: -40px;
+        font-size: 12px;
+    }
+}
+@media (max-width:1024px) {
+    .navbar{
+        padding: 12px 30px;
+    }
+    .nav-menu{
+        gap: 25px;
+        font-size: 14px;
+    }
+    .nav-login-cart .loginbutton{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .nav-login-cart img{
+        width: 34px;
+        margin-top: 4px;
+    }
+    .nav-cart-count{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media (max-width:800px) {
+    .navbar{
+        padding: 10px 0px;
+    }
+    
+    .nav-login-cart .loginbutton{
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+        margin-right: -15px;
+    }
+.nav-logo img{
+    width: 35px;
+}
+.nav-logo p{
+    font-size: 24px;
+}
+    .nav-menu {
+        position: fixed;
+            left: -100%;
+            top: 5rem;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            z-index: 10;
+    }
+    .nav-menu li{
+        margin: 15px 0;
+    }
+    .nav-menu-visible {
+        left: 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.open .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+@media (max-width:500px) {
+    .navbar{
+        padding: 8px 0;
+        gap:0;
+    }
+    .nav-logo{
+        transform: scale(0.8);
+    }
+    .nav-login-cart{
+        transform: scale(0.8);
+    }
 }
