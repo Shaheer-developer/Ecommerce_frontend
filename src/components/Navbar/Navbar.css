@@ -144,9 +144,9 @@
     }
     
     .nav-login-cart .loginbutton{
-        width: 70px;
-        height: 30px;
-        font-size: 12px;
+        width: 80px;
+        height: 35px;
+        font-size: 13px;
         margin-right: -15px;
     }
 .nav-logo img{
@@ -157,7 +157,6 @@
 }
     .nav-menu {
         position: fixed;
-            left: -100%;
             top: 5rem;
             flex-direction: column;
             background: #fff;
@@ -167,12 +166,13 @@
             transition: 0.3s;
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             z-index: 10;
+            transform: translateX(-100%);
     }
     .nav-menu li{
         margin: 15px 0;
     }
     .nav-menu-visible {
-        left: 0;
+        transform: translateX(0);
     }
     .hamburger {
         display: block;

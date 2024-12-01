@@ -31,7 +31,7 @@ const Shopcategory=(props)=>{
 })}
 
 </div>
-<div className="shopcategory-loadmoe">
+<div className="shopcategory-loadmore">
     Explore More
 </div>
 
