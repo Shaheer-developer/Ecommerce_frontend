@@ -7,6 +7,14 @@ import { ShopContext } from "../../context/Shopcontext";
 const Productdisplay=(props)=>{
     const {product}=props;
     const {addtocart}=useContext(ShopContext)
+    const secure_addtocart = (prop) =>{
+        if(localStorage.getItem("auth-token")){
+            addtocart(prop);
+        }
+        else{
+            window.location.replace("/login")
+        }
+    }
     return(
         <div className="productdisplay">
 <div className="productdisplay-left">
@@ -49,7 +57,7 @@ Lightweight, luxurious silk blouse designed for a chic, polished look. Tailored 
     <div>XXL</div>
 </div>
 </div>
-<button onClick={()=>{addtocart(product.id)}} className="productdisplay-addtocart">ADD TO CART</button>
+<button onClick={()=>{secure_addtocart(product.id)}} className="productdisplay-addtocart">ADD TO CART</button>
 <p className="productdisplay-right-category"><span>Category:</span> Women , T-shirt , Crop-top</p>
 <p className="productdisplay-right-category"><span>Tags:</span> Modern , Latest</p>
 </div>
