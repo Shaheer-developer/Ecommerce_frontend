@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🛍️ E-Commerce Frontend & Admin Panel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A modern e-commerce application featuring a customer-facing shopping platform and a dedicated admin dashboard for management.
 
-## Available Scripts
+## 📂 Project Structure
 
-In the project directory, you can run:
+This repository contains two distinct applications:
 
-### `npm start`
+1.  **Frontend (Root):** The main customer-facing store built with Create React App.
+2.  **Admin Panel (`/admin-panel`):** A fast, lightweight dashboard built with React and Vite.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tech Stack
 
-### `npm test`
+### **Customer Frontend**
+* **Framework:** React.js (Create React App)
+* **Routing:** React Router DOM (v6)
+* **Testing:** React Testing Library
+* **Styling:** CSS3
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Admin Panel**
+* **Build Tool:** Vite
+* **Framework:** React.js
+* **Routing:** React Router DOM (v7)
+* **Linting:** ESLint
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **🛒 Customer Store**
+* **Responsive Navigation:** Browsing by categories (Men, Women, Kids).
+* **Product Management:** View individual product details via dynamic routing (`/product/:productId`).
+* **Shopping Cart:** Dedicated page for managing selected items.
+* **User Accounts:** Login and Signup functionality.
+* **Banners:** Category-specific promotional banners.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **🛠 Admin Dashboard**
+* **Dashboard Interface:** Centralized admin view.
+* **Navigation:** Dedicated admin navbar.
+* **Optimized Performance:** Built with Vite for fast HMR (Hot Module Replacement).
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the full application, you will need to set up both the **Frontend** and the **Admin Panel** separately.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Setup Customer Frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The main store is located in the root directory.
 
-## Learn More
+1.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2.  **Start the Development Server:**
+    ```bash
+    npm start
+    ```
+    * Runs on `http://localhost:3000` by default.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Setup Admin Panel
 
-### Code Splitting
+The admin dashboard is located in the `admin-panel` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1.  **Navigate to the directory:**
+    ```bash
+    cd admin-panel
+    ```
 
-### Analyzing the Bundle Size
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3.  **Start the Development Server:**
+    ```bash
+    npm run dev
+    ```
+    * Runs on a separate port (typically `http://localhost:5173`) provided by Vite.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📜 Scripts
 
-### Advanced Configuration
+### Root (Frontend)
+* `npm start`: Runs the app in development mode.
+* `npm run build`: Builds the app for production to the `build` folder.
+* `npm test`: Launches the test runner.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Admin Panel
+* `npm run dev`: Starts the Vite development server.
+* `npm run build`: Builds the admin panel for production.
+* `npm run lint`: Runs ESLint to check code quality.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+1.  Fork the repository.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+**Author:** Shaheer Developer
